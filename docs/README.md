@@ -17,6 +17,6 @@ This repository creates a custom Kasm Ubuntu Development with PowerShell Docker 
 
 ![](/docs/kasm-ubuntu-dev-setup.png)
 
-- Be sure to configure **Persistent Profile Path** so that user details are saved.sa
+- Be sure to configure **Persistent Profile Path** so that user details are saved.
 
 Enjoy!
