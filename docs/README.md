@@ -1,7 +1,7 @@
 # Kasm-Ubuntu-Dev
 **Ubuntu Desktop with PowerShell** for Kasm (Ideal for Raspberry Pi)
 
-Containerised Ubuntu Development with PowerShell, streamed to your browser, running on a Raspberry Pi 😳
+Containerised Ubuntu Development Desktop with PowerShell, streamed to your browser, running on a Raspberry Pi 😳
 
 ![](/docs/kasm-ubuntu-dev-screenshot-1.png)
 
