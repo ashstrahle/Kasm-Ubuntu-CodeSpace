@@ -5,6 +5,8 @@ Containerised Ubuntu Development Desktop with PowerShell, streamed to your brows
 
 ![](/docs/kasm-ubuntu-dev-screenshot-1.png)
 
+![](/docs/kasm-ubuntu-dev-screenshot-2.png)
+
 This repository creates a custom Kasm Ubuntu Development with PowerShell Docker image.
 
 ## Installation
