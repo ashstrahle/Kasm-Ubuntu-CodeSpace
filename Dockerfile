@@ -1,4 +1,4 @@
-FROM kasmweb/ubuntu-jammy-desktop:1.12.0
+FROM kasmweb/ubuntu-jammy-desktop:1.12.0-rolling
 USER root
 
 ENV HOME /home/kasm-default-profile
@@ -18,11 +18,14 @@ RUN wget -O powershell.tar.gz https://github.com/PowerShell/PowerShell/releases/
   && echo /usr/bin/pwsh >> /etc/shells \
   && rm powershell.tar.gz
 
+# Install DotNet
+RUN https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash
+
 # Update all packages
-RUN apt-get update \
-  && apt-get upgrade -y \
-  && apt-get autoremove \
-  && apt-get autoclean
+# RUN apt-get update \
+#   && apt-get upgrade -y \
+#   && apt-get autoremove -y\
+#   && apt-get autoclean -y
 
 ######### End Customizations ###########
 
