@@ -25,7 +25,7 @@ RUN curl -s https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-insta
 # Update all packages
 RUN apt-get update \
   && apt-get upgrade -y \
-  && apt-get autoremove -y\
+  && apt-get autoremove -y \
   && apt-get autoclean -y
 
 ######### End Customizations ###########
