@@ -19,7 +19,7 @@ RUN wget -O powershell.tar.gz https://github.com/PowerShell/PowerShell/releases/
   && rm powershell.tar.gz
 
 # Install DotNet
-RUN https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash
+RUN curl -s https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash
 
 # Update all packages
 # RUN apt-get update \
