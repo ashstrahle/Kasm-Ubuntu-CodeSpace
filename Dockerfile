@@ -1,4 +1,4 @@
-FROM kasmweb/ubuntu-jammy-desktop:1.14.0
+FROM kasmweb/ubuntu-jammy-desktop:1.15.0
 USER root
 
 ENV HOME /home/kasm-default-profile
@@ -9,7 +9,7 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 
 # Install PowerShell
-ENV PSVER 7.3.2
+ENV PSVER 7.4.1
 ENV PSHome /opt/microsoft/powershell/7
 RUN wget -O powershell.tar.gz https://github.com/PowerShell/PowerShell/releases/download/v$PSVER/powershell-$PSVER-linux-arm64.tar.gz \
   && mkdir -p $PSHome \
