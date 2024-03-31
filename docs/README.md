@@ -13,7 +13,7 @@ This repository creates a custom Kasm Ubuntu CodeSpace with PowerShell Docker im
 
 - Run the following to create the required Docker image:
 
-      docker build -t ubuntu-dev -f Dockerfile .
+      docker build -t ubuntu-codespace -f Dockerfile .
 
 - Create the Kasm Workspace as per below:
 
