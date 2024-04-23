@@ -20,7 +20,8 @@ RUN wget -O powershell.tar.gz https://github.com/PowerShell/PowerShell/releases/
 
 # Install DotNet
 RUN curl -s https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash \
-  && echo 'export PATH="$PATH:~/.dotnet/"' >> ~/.bashrc
+  && echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc \
+  echo 'export PATH=$PATH:DOTNET_ROOT' >> ~/.bashrc
 
 # Update all packages
 RUN apt-get update \
