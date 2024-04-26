@@ -9,6 +9,10 @@ WORKDIR $HOME
 
 ######### Customize Container Here ###########
 
+# Install docker-compose
+RUN apt-get update \
+  && apt-get install docker-compose -y
+
 # Install PowerShell
 ENV PSVER 7.4.2
 ENV PSHome /opt/microsoft/powershell/7
