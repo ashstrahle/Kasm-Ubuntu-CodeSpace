@@ -10,7 +10,7 @@ WORKDIR $HOME
 ######### Customize Container Here ###########
 
 # Install PowerShell
-ENV PSVER 7.4.1
+ENV PSVER 7.4.2
 ENV PSHome /opt/microsoft/powershell/7
 RUN wget -O powershell.tar.gz https://github.com/PowerShell/PowerShell/releases/download/v$PSVER/powershell-$PSVER-linux-arm64.tar.gz \
   && mkdir -p $PSHome \
