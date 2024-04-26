@@ -1,4 +1,5 @@
-FROM kasmweb/ubuntu-jammy-desktop:1.15.0
+FROM kasmweb/ubuntu-jammy-dind:1.15.0
+#FROM kasmweb/ubuntu-jammy-desktop:1.15.0
 USER root
 
 ENV HOME /home/kasm-default-profile
