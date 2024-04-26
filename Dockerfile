@@ -1,4 +1,4 @@
-FROM kasmweb/ubuntu-jammy-dind:1.15.0
+FROM kasmweb/ubuntu-jammy-dind:1.15.0-rolling
 #FROM kasmweb/ubuntu-jammy-desktop:1.15.0
 USER root
 
@@ -24,11 +24,12 @@ RUN curl -s https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-insta
   && echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc \
   echo 'export PATH=$PATH:DOTNET_ROOT' >> ~/.bashrc
 
+## No longer required as using rolling image
 # Update all packages
-RUN apt-get update \
-  && apt-get upgrade -y \
-  && apt-get autoremove -y \
-  && apt-get autoclean -y
+# RUN apt-get update \
+#   && apt-get upgrade -y \
+#   && apt-get autoremove -y \
+#   && apt-get autoclean -y
 
 ######### End Customizations ###########
 
